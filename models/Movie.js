@@ -27,5 +27,16 @@ const MovieSchema = new mongoose.Schema({
     required: true,
   },
 });
+MovieSchema.pre("save", async function (next) {
+  try {
+    const ownerExists = await Owner.findById(this.owner);
+    if (!ownerExists) {
+      throw new Error("Owner not found");
+    }
+    next();
+  } catch (err) {
+    next(err);
+  }
+});
 
 module.exports = mongoose.model("Movie", MovieSchema);

@@ -29,5 +29,13 @@ OwnerSchema.pre("save", async function (next) {
 OwnerSchema.methods.matchPassword = async function (enteredPassword) {
   return await bcrypt.compare(enteredPassword, this.password);
 };
+OwnerSchema.virtual("movies", {
+  ref: "Movie",
+  localField: "_id",
+  foreignField: "owner",
+});
+
+OwnerSchema.set("toJSON", { virtuals: true });
+OwnerSchema.set("toObject", { virtuals: true });
 
 module.exports = mongoose.model("Owner", OwnerSchema);
