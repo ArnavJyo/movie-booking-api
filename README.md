@@ -177,7 +177,7 @@ Authorization: Bearer <JWT_TOKEN>
   ```json
   {
     "movieId": "string",
-    "seatsToBook": "integer"
+    "Seats": "integer"
   }
   ```
 - **Response:**
