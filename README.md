@@ -214,7 +214,7 @@ Authorization: Bearer <JWT_TOKEN>
     "bookings": [
         {
             "movie": "string",
-            "seatsBooked": int,
+            "seatsBooked": integer,
             "_id": "string"
         }
     ],
