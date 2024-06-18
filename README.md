@@ -55,9 +55,9 @@ Authorization: Bearer <JWT_TOKEN>
 - **Response:**
   ```json
   {
-     "_id": "String",
-    "name": "Kavish",
-    "email": "kavish@example.com",
+     "_id": "string",
+    "name": "string",
+    "email": "string",
     "token": "string"
   }
   ```
@@ -98,9 +98,9 @@ Authorization: Bearer <JWT_TOKEN>
   ```
 - **Response:**
   ```json
-  { "_id": "String",
-    "name": "Kavish",
-    "email": "kavish@example.com",
+  { "_id": "string",
+    "name": "string",
+    "email": "string",
     "token": "string"
   }
   ```
@@ -207,14 +207,14 @@ Authorization: Bearer <JWT_TOKEN>
   ```json
   {
      "_id": "string",
-    "name": "Kavish",
-    "email": "kavish@example.com",
-    "password": "hashed",
-    "gender": "Male",
+    "name": "string",
+    "email": "string",
+    "password": "string",
+    "gender": "string",
     "bookings": [
         {
             "movie": "string",
-            "seatsBooked": integer,
+            "seatsBooked": "integer",
             "_id": "string"
         }
     ],
