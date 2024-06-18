@@ -206,13 +206,20 @@ Authorization: Bearer <JWT_TOKEN>
 - **Response:**
   ```json
   {
-    "message": "User profile updated successfully",
-    "user": {
-      "id": "string",
-      "username": "string",
-      "gender": "string",
-      "dob": "string (YYYY-MM-DD)"
-    }
+     "_id": "string",
+    "name": "Kavish",
+    "email": "kavish@example.com",
+    "password": "hashed",
+    "gender": "Male",
+    "bookings": [
+        {
+            "movie": "string",
+            "seatsBooked": int,
+            "_id": "string"
+        }
+    ],
+    "__v": 1,
+    "dob": "2012-07-19T00:00:00.000Z"
   }
   ```
 
