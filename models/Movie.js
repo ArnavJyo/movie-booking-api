@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const Owner = require("./Owner");
 
 const MovieSchema = new mongoose.Schema({
   name: {
