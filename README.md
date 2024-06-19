@@ -234,10 +234,10 @@ Authorization: Bearer <JWT_TOKEN>
       "movie": {
         "_id": "string",
         "name": "string",
-        // other movie deatils
+         other movie deatils
               },
       "seatsBooked": "integer",
-      // other booking details
+      other booking details
     },
     {
       "_id": "string",
@@ -245,12 +245,12 @@ Authorization: Bearer <JWT_TOKEN>
         "_id": "string",
         "title": "string",
 
-        // other movie details
+        other movie details
       },
       "seatsBooked": "integer",
-      // other booking details
+       other booking details
     },
-    // more bookings as needed
+     more bookings as needed
   ]
 
 
@@ -305,12 +305,12 @@ Authorization: Bearer <JWT_TOKEN>
    {
      "_id": "movie1",
      "title": "Movie 1",
-     // other movie fields
+     other movie fields
    },
    {
      "_id": "movie2",
      "title": "Movie 2",
-     // other movie fields
+     other movie fields
    },
 
  ]
