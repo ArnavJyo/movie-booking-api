@@ -325,6 +325,7 @@ The main routes are configured in the application as follows:
 app.use("/api/auth", authRoutes);
 app.use("/api/movies", movieRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/owners",ownerRoutes);
 ```
 
 ## Error Handling
