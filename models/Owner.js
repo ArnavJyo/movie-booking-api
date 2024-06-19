@@ -34,7 +34,9 @@ OwnerSchema.virtual("movies", {
   localField: "_id",
   foreignField: "owner",
 });
-
+OwnerSchema.methods.getMovies = async function () {
+  return mongoose.model("Movie").find({ owner: this._id });
+};
 OwnerSchema.set("toJSON", { virtuals: true });
 OwnerSchema.set("toObject", { virtuals: true });
 
