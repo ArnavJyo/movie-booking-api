@@ -343,6 +343,3 @@ All error responses will have the following structure:
 
 This documentation covers the main endpoints required for user and owner interactions with the movie booking system. Each endpoint specifies the necessary authorization, request parameters, and response structure. Ensure JWT tokens are correctly implemented and passed in the headers for protected routes.
 
-```
-
-```
